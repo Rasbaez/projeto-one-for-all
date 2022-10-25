@@ -2,14 +2,16 @@ DROP DATABASE IF EXISTS SpotifyClone;
 
   CREATE DATABASE IF NOT EXISTS SpotifyClone;
 
-  CREATE TABLE SpotifyClone.tabela1(
-      coluna1 tipo restricoes,
-      coluna2 tipo restricoes,
-      colunaN tipo restricoes,
+  CREATE TABLE SpotifyClone.user(
+      user_id INT PRIMARY KEY AUTOINCREMENT,
+      user_name  VARCHAR(45),
+      subscription_type  VARCHAR(45),
+      user_age INT,
+      FOREIGN KEY (subscription_type) REFERENCES SpotifyClone.subscription(subscription_type)
   ) engine = InnoDB;
 
-  CREATE TABLE SpotifyClone.tabela2(
-      coluna1 tipo restricoes,
+  CREATE TABLE SpotifyClone.subscription(
+      subscription tipo restricoes,
       coluna2 tipo restricoes,
       colunaN tipo restricoes,
   ) engine = InnoDB;
