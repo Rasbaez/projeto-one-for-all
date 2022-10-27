@@ -63,6 +63,7 @@ CREATE TABLE SpotifyClone.album(
   ) engine = InnoDB;
  
   
+  
   INSERT INTO SpotifyClone.subscription (subscription_id, subscription_type, subscription_value)
    VALUES
     (1, 'free', 0),
@@ -76,14 +77,15 @@ CREATE TABLE SpotifyClone.album(
     (1, 'Barbara Liskov', 34, 1),
     (2, 'Robert Cecil Martin', 25, 2),
     (3, 'Ada Lovelace', 60, 3),
-    (4, 'Sandi Metz', 60, 3),
-    (5, 'Paulo Freire', 60, 3),
-    (6, 'Bell Hooks', 60, 3),
-    (7, 'Christopher Alexander', 60, 3),
-    (8, 'Judith Butler', 60, 3),
-    (9, 'Jorge Amado', 60, 3),
-    (10, 'Ada Lovelace', 60, 3);
+    (4, 'Martin Fowler', 60, 3),
+    (5, 'Sandi Metz', 60, 3),
+    (6, 'Paulo Freire', 60, 3),
+    (7, 'Bell Hooks', 60, 3),
+    (8, 'Christopher Alexander', 60, 3),
+    (9, 'Judith Butler', 60, 3),
+    (10, 'Jorge Amado', 60, 3);
     
+
 
 INSERT INTO SpotifyClone.artist(artist_id, artist_name)
   VALUES 
@@ -109,7 +111,7 @@ INSERT INTO SpotifyClone.album(album_id, album_name, release_year, artist_id)
 
 INSERT INTO SpotifyClone.music(music_id, music_name, album_id, seconds_duration, release_year)
   VALUES
-    (1, 'VIRGOS GROOVE', 1, 116, '2022'),
+    (1, 'VIRGOS GROOVE', 1, 369, '2022'),
     (2, 'Dont Stop me Now', 2, 203, '1978'),
     (3, 'Under Pressure', 3, 152, '1982'),
     (4, 'Como Nossos Pais', 4, 105, '1998'),
@@ -118,33 +120,32 @@ INSERT INTO SpotifyClone.music(music_id, music_name, album_id, seconds_duration,
     (7, 'The Bards Song', 7, 244, '2007' ),
     (8, "Feeling Good", 8, 100, '2012'),
     (9, 'BREAK MY SOUL', 1, 279, '2022'),
-    (10, 'ALIEN SUPERSTAR', 1, 369, '2022');
+    (10, 'ALIEN SUPERSTAR', 1, 116, '2022');
 
 
 
   INSERT INTO SpotifyClone.reproduction (music_id, user_id, reproduction_date)
    VALUES
-    (1, 1, "2022-03-06 09:22:33"),
-    (2, 2, "2020-03-04 14:12:53"),
-    (3, 3, "2022-10-12 10:17:26"),
-    (3, 1, "2018-11-05 11:17:26"),
-    (4, 1, "2019-03-12 13:22:36"),
-    (6, 1, "2020-09-21 11:17:26"),
-    (7, 4, "2022-02-20 12:18:26"),
-    (8, 1, "2021-02-22 16:12:26"),
-    (6, 2, "2022-06-14 09:11:26"),
-    (5, 4, "2021-02-17 04:17:26"),
-    (10, 5, "2021-11-26 01:17:50"),
-    (10, 9, "2020-01-10 14:12:23"),
-    (8, 7,  "2015-09-12 12:17:21"),
-    (1, 10, "2016-02-09 14:11:26"),
-    (3, 4, "2019-02-23 17:17:16"),
-    (4,4, "2022-09-06 13:12:28");
-    
+    (6, 1, "2022-02-28 10:45:55"),
+    (1, 1, "2020-05-02 05:30:35"),
+    (8, 1, "2020-03-06 11:22:33"),
+    (8, 2, "2022-08-05 08:05:17"),
+    (5, 2, "2020-01-02 07:40:33"),
+    (8, 3, "2020-11-13 16:55:13"),
+    (1, 3, "2020-12-05 18:38:30"),
+    (6, 4, "2021-08-15 17:10:10"),
+    (6, 5, "2022-01-09 01:44:33"),
+    (3, 5, "2020-08-06 15:23:43"),
+    (5, 6, "2017-01-24 00:31:17"),
+    (9, 6, "2017-10-12 12:35:20"),
+    (2, 7, "2011-12-15 22:30:49"),
+    (2, 8, "2012-03-17 14:56:41"),
+    (7, 9, "2022-02-24 21:14:22"),
+    (10, 10,"2015-12-13 08:30:22");   
 
   INSERT INTO SpotifyClone.folow (artist_id, user_id, artist_name)
   VALUES
-   (2, 10, 'Beyoncé'),
+   (1, 10, 'Beyoncé'),
    (3, 8, 'Elis Regina'),
    (6, 1, 'Nina Simone'),
    (5, 4, 'Blind Guardian'),
