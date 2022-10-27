@@ -5,3 +5,14 @@ SELECT
     SUM(s.subscription_value) AS faturamento_total
  FROM SpotifyClone.subscription AS s
  INNER JOIN SpotifyClone.`user` AS u ON u.subscription_id = s.subscription_id;   
+
+	
+
+
+
+
+
+
+
+
+

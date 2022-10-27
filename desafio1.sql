@@ -146,20 +146,21 @@ INSERT INTO SpotifyClone.music(music_id, music_name, album_id, seconds_duration,
 
   INSERT INTO SpotifyClone.folow (artist_id, user_id, artist_name)
   VALUES
-   (1, 10, 'Beyoncé'),
-   (3, 8, 'Elis Regina'),
-   (6, 1, 'Nina Simone'),
-   (5, 4, 'Blind Guardian'),
-   (6, 6, 'Nina Simone'),
-   (1, 4, 'Beyoncé'),
-   (2, 4, 'Queen'),
-   (4, 2, 'Baco Exu do Blues'),
-   (6, 9, 'Nina Simone'),
-   (5, 8, 'Blind Guardian'),
-   (3, 3, 'Elis Regina'),
-   (2, 6, 'Queen'),
-   (5, 10, 'Blind Guardian'),
-   (2, 1, 'Queen');
+    (1, 1, 'Beyoncé'),
+    (2, 1, 'Queen'),
+    (3, 1, 'Elis Regina'),
+    (1, 2, 'Beyoncé'),
+    (3, 2, 'Elis Regina'),
+    (2, 3, 'Queen'),
+    (4, 4, 'Baco Exu do Blues'),
+    (5, 5, 'Blind Guardian'),
+    (6, 5, 'Nina Simone'),
+    (6, 6, 'Nina Simone'),
+    (1, 6, 'Beyoncé'),
+    (6, 7, 'Nina Simone'),
+    (3, 9, 'Elis Regina'),
+    (2, 10, 'Queen');
+
 
 
   
