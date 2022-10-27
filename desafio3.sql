@@ -10,4 +10,8 @@ FROM
     SpotifyClone.music AS m ON m.music_id = r.music_id
 GROUP BY usuario.user_name
 ORDER BY usuario.user_name;
+	
+
+
+
 
