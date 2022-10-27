@@ -14,6 +14,7 @@ DROP DATABASE IF EXISTS SpotifyClone;
       user_name VARCHAR(45) NOT NULL,
       user_age INT,
       subscription_id INT NOT NULL,
+      subscription_date DATE NOT NULL,
       FOREIGN KEY (subscription_id) REFERENCES SpotifyClone.subscription (subscription_id)
   ) engine = InnoDB;
   
@@ -72,18 +73,18 @@ CREATE TABLE SpotifyClone.album(
     (4, 'personal', 6.99);
 
 
-  INSERT INTO SpotifyClone.user (user_id, user_name, user_age, subscription_id)
+  INSERT INTO SpotifyClone.user (user_id, user_name, user_age, subscription_id, subscription_date)
    VALUES
-    (1, 'Barbara Liskov', 34, 1),
-    (2, 'Robert Cecil Martin', 25, 2),
-    (3, 'Ada Lovelace', 60, 3),
-    (4, 'Martin Fowler', 60, 3),
-    (5, 'Sandi Metz', 60, 3),
-    (6, 'Paulo Freire', 60, 3),
-    (7, 'Bell Hooks', 60, 3),
-    (8, 'Christopher Alexander', 60, 3),
-    (9, 'Judith Butler', 60, 3),
-    (10, 'Jorge Amado', 60, 3);
+    (1, 'Barbara Liskov', 34, 1, '2019-10-20'),
+    (2, 'Robert Cecil Martin', 25, 2, '2017-01-06'),
+    (3, 'Ada Lovelace', 60, 3, '2017-12-30'),
+    (4, 'Martin Fowler', 60, 3, '2017-01-17'),
+    (5, 'Sandi Metz', 60, 3, '2018-04-29'),
+    (6, 'Paulo Freire', 60, 3, '2018-02-14'),
+    (7, 'Bell Hooks', 60, 3, '2018-01-05'),
+    (8, 'Christopher Alexander', 60, 3, '2019-06-05'),
+    (9, 'Judith Butler', 60, 3, '2020-05-13'),
+    (10, 'Jorge Amado', 60, 3, '2017-02-17');
     
 
 
