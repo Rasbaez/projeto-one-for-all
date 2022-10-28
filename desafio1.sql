@@ -112,13 +112,13 @@ INSERT INTO SpotifyClone.album(album_id, album_name, release_year, artist_id)
 
 INSERT INTO SpotifyClone.music(music_id, music_name, album_id, seconds_duration, release_year)
   VALUES
-    (1, 'VIRGOS GROOVE', 1, 369, '2022'),
-    (2, 'Dont Stop me Now', 2, 203, '1978'),
+    (1, "VIRGO’S GROOVE", 1, 369, '2022'),
+    (2, 'Don’t Stop Me Now', 2, 203, '1978'),
     (3, 'Under Pressure', 3, 152, '1982'),
     (4, 'Como Nossos Pais', 4, 105, '1998'),
-    (5, 'O modelo de Amar è o Medo de Ser Livre', 5, 207, '2001'),
+    (5, 'O Medo de Amar é o Medo de Ser Livre', 5, 207, '2001'),
     (6, 'Samba em Paris', 6, 267, '2003'),
-    (7, 'The Bards Song', 7, 244, '2007' ),
+    (7, "The Bard’s Song", 7, 244, '2007' ),
     (8, "Feeling Good", 8, 100, '2012'),
     (9, 'BREAK MY SOUL', 1, 279, '2022'),
     (10, 'ALIEN SUPERSTAR', 1, 116, '2022');
